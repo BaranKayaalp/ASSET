@@ -1,0 +1,42 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.navbar {
+    position: relative;
+  }
+  
+  .navbar::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px; /* Altında biraz boşluk bırakabilirsiniz */
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar:hover::after {
+    width: 100%;
+  }
+  
+
+ .anasayfabg {
+    position: absolute;
+    
+    height: 85%;
+    opacity: .1;
+    
+ }
+
+  
+.a2bg{
+  position: absolute;
+  height: 110%;
+  margin-top: 25px;
+  opacity: .2;
+}
+
